@@ -5,6 +5,7 @@
 This project aims to simplify the process of filling out forms from the Deutsche Rentenversicherung (German Pension
 Insurance) by automatically pre-filling personal data. The script uses a dictionary to store user input and generates
 multiple PDF forms for different family member combinations.
+I fills 8 forms with up to ~140 form fields from ~30 inputs.
 
 ## Features
 
@@ -18,7 +19,7 @@ multiple PDF forms for different family member combinations.
 * Install required dependencies: `pip install -r requirements.txt`
 * Fill in the dictionary in `./rv_form_prefill/my_family_definition.py` with your personal information
 * Run the script: `python -m rv_form_prefill.pre_fill_forms`
-* Use the forms generated in forms_output
+* Use the forms generated in forms_output to continue filling the remaining forms/printing
 
 ## Supported Forms
 
