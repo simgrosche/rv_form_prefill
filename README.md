@@ -8,7 +8,7 @@ multiple PDF forms for different family member combinations.
 
 ## Features
 
-* Automatically pre-fills personal data in forms V0800, V0805, and V0820
+* Downloads and automatically pre-fills personal data in forms V0800, V0805, and V0820
 * Generates separate PDF forms for each combination that may be needed (mother/father/child1/child2)
 * Easy to use: simply fill in the personal data dictionary and run the script
 
