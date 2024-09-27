@@ -17,24 +17,30 @@ multiple PDF forms for different family member combinations.
 * Clone the repository
 * Install required dependencies: `pip install -r requirements.txt`
 * Fill in the dictionary in `./rv_form_prefill/my_family_definition.py` with your personal information
-* Run the script: `python -m rv_form_prefill.pre_fill_forms` 
+* Run the script: `python -m rv_form_prefill.pre_fill_forms`
 * Use the forms generated in forms_output
+
+## Supported Forms
+
+* V0800
+* V0805
+* V0820
 
 ## Form Combinations
 
 The script generates the following 8 form combinations:
 
 * V0800
-  * for mother + child 1 + child 2
-  * for father + child 1 + child 2
+    * for mother + child 1 + child 2
+    * for father + child 1 + child 2
 * V0805
-  * Mother + Child 1
-  * Mother + Child 2
-  * Father + Child 1
-  * Father + Child 2
+    * Mother + Child 1
+    * Mother + Child 2
+    * Father + Child 1
+    * Father + Child 2
 * V0820
-  * Mother/Father + Child1
-  * Mother/Father + Child2
+    * Mother/Father + Child1
+    * Mother/Father + Child2
 
 ## Requirements
 
