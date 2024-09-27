@@ -1,0 +1,16 @@
+# IntelliJ IDEA project files
+.idea/
+
+# Byte-compiled / optimized files
+__pycache__/
+
+# mypy
+.mypy_cache/
+
+# ruff
+.ruff_cache/
+
+# PDF files
+*.pdf
+*.fdf
+
