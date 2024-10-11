@@ -5,11 +5,13 @@
 This project aims to simplify the process of filling out forms from the Deutsche Rentenversicherung (German Pension
 Insurance) by automatically pre-filling personal data. The script uses a dictionary to store user input and generates
 multiple PDF forms for different family member combinations.
-I fills 8 forms with up to ~140 form fields from ~30 inputs.
+It fills 8 forms with up to ~140 form fields from ~30 well-structured user inputs.
 
 ## Features
 
 * Downloads and automatically pre-fills personal data in forms V0800, V0805, and V0820
+  * Form are for `Feststellung von Kindererziehungszeiten`and `Zuordnung der Kindererziehungszeit`
+  * Official information can be found here: https://www.deutsche-rentenversicherung.de/DRV/DE/Rente/Familie-und-Kinder/Kindererziehung/kindererziehung_node.html
 * Generates separate PDF forms for each combination that may be needed (mother/father/child1/child2)
 * Easy to use: simply fill in the personal data dictionary and run the script
 
