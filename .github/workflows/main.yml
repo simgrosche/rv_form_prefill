@@ -23,14 +23,14 @@ jobs:
 
     - name: Install dependencies
       run: |
-        python -m venv venv
-        source venv/bin/activate
         pip install --upgrade pip
-        pip install -r requirements.txt
+        pip install uv
+        uv sync
+
 
     - name: Run script
       run: |
-        source venv/bin/activate
+        source .venv/bin/activate
         python -m rv_form_prefill.pre_fill_forms
         
 

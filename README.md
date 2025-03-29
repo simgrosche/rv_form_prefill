@@ -18,7 +18,7 @@ It fills 8 forms with up to ~140 form fields from ~30 well-structured user input
 ## Usage
 
 * Clone the repository
-* Install required dependencies: `pip install -r requirements.txt`
+* Install required dependencies according to `pyproject.toml`, e.g. using `uv sync`
 * Fill in the dictionary in `./rv_form_prefill/my_family_definition.py` with your personal information
 * Run the script: `python -m rv_form_prefill.pre_fill_forms`
 * Use the forms generated in forms_output to continue filling the remaining forms/printing
