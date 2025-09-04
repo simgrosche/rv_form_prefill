@@ -1,6 +1,7 @@
 from pydantic import BaseModel, field_validator
 
 
+
 class Residence(BaseModel):
     street: str
     street_number: str
@@ -13,3 +14,5 @@ class Residence(BaseModel):
         if not value.isdigit():
             raise ValueError("PLZ must be numeric")
         return value
+
+
