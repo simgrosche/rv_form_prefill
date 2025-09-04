@@ -9,6 +9,13 @@ dependencies = [
 ]
 
 
+[dependency-groups]
+dev = [
+    "mypy>=1.17.1",
+    "ruff>=0.12.11",
+    "types-requests>=2.32.4.20250809",
+]
 
 [tool.mypy]
 mypy_path = "rv_form_prefill"
+
