@@ -1,30 +1,32 @@
-from dataclasses import dataclass
+from pydantic import BaseModel, field_validator
+import re
 
 
-@dataclass
-class Person:
+class Person(BaseModel):
     first_name: str
     last_name: str
     birth_city: str
     birth_country: str
-    birth_date: str  # "DD.MM.YYYY" (or "DDMMYYYY")
+    birth_date: str  # "DD.MM.YYYY" or "DDMMYYYY"
 
-    def __post_init__(self):
-        self.birth_date = self.birth_date.replace(".", "")
+    @field_validator("birth_date")
+    def validate_birth_date(cls, value):
+        # Remove dots and validate format
+        cleaned = value.replace(".", "")
+        if not re.match(r"^\d{8}$", cleaned):
+            raise ValueError("Birth date must be DD.MM.YYYY or DDMMYYYY format")
+        return cleaned
 
 
-@dataclass
 class Mother(Person):
     rentenversicherungsnummer: str
     birth_name: str
 
 
-@dataclass
 class Father(Person):
     rentenversicherungsnummer: str
     birth_name: str
 
 
-@dataclass
 class Child(Person):
     pass
